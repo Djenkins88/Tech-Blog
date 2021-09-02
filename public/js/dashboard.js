@@ -1,10 +1,10 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('#post-name').value.trim();
+    const title = document.querySelector('#post-title').value.trim();
     const content = document.querySelector('#post-content').value.trim();
   
-    if (name && description) {
+    if (title && content) {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({ title, content }),
@@ -16,10 +16,10 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create post');
       }
     }
-  };
+};
   
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
@@ -30,9 +30,9 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/posts');
+        document.location.replace('/dashboard');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete post');
       }
     }
   };

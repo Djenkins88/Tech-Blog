@@ -11,13 +11,16 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/seed.js",
+    "watch": "nodemon/node server.js"
   },
   "name": "tech-blog",
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Djenkins88/Tech-Blog.git"
