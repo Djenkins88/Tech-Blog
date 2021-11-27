@@ -1,6 +1,9 @@
 # Tech-Blog
 
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Link to deployed App here https://the-new-tech-blog.herokuapp.com/
+![Untitled_ Nov 27, 2021 5_14 PM](https://user-images.githubusercontent.com/81633522/143723031-36db9225-2101-4b38-a401-dbba84ff0e33.gif)
 
 
     
